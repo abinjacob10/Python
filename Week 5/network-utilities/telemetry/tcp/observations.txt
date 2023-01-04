@@ -1,0 +1,8 @@
+
+#Received only one message when connect was called outside while loop in client.py
+
+Message: bhi from address (127.0.0.1, 58656) -
+
+#below error is observed when socket is created only once outside the while loop and connect() method is called inside the  while loop
+OSError: [Errno 106] Transport endpoint is already connected
+

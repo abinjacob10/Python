@@ -1,0 +1,10 @@
+
+#Observed below message seen in last line, this loopback address was used by linux machine, used 127.0.0.2 instead
+
+abin@ThinkPad-P14s-Gen-2a:~/Desktop/ATU/Cloud computing Technologies Course work/IaC/Python/network-utilities/telemetry$ python3 server.py 
+('127.0.0.1', 34899)
+Traceback (most recent call last):
+  File /home/abin/Desktop/ATU/Cloud computing Technologies Course work/IaC/Python/network-utilities/telemetry/server.py, line 16, in <module>
+    socket1.bind(addr1)
+OSError: [Errno 98] Address already in use
+ -

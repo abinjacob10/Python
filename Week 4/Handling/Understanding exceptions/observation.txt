@@ -1,0 +1,28 @@
+def divide(x,y):
+  try:
+    result =x/y
+    print("End of try clause")
+  except ZeroDivisionError:
+    print("division by zero!")
+  else:
+    print("result is:", result)
+  finally:
+    print("executing the finally clause")
+
+divide(2,3)
+divide(5,3)
+divide(2,0)
+
+
+In above function call, when (2,0) is passed, below is the output marked with arrow
+
+Below is the output.
+End of try clause
+result is: 0.6666666666666666
+executing the finally clause
+End of try clause
+result is: 1.6666666666666667
+executing the finally clause
+division by zero!                                        << notice how "End of try clause" is avoided and execution directly jumps to except clause
+executing the finally clause				 << finally clause gets executed anyway.
+
